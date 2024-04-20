@@ -1,0 +1,119 @@
+
+
+
+.form {
+    margin-top: 198px;
+
+    .btnSend {
+        margin-top: 18px;
+        width: 222px;
+        height: 71px;
+        background: #333;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 15px;
+        cursor: pointer;
+
+        &:hover {
+            column-gap: 20px;
+            background-color:#e2dfdf;
+            color: #333;
+            transition: all 0.3s;
+            border:#a6a4a4;
+        }
+
+        &:not(:hover) {
+            transition: all 0.2s;
+        }
+    }
+
+    .agreeWithCompany {
+        margin-top: 17px;
+        margin-left: 40px;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        color: #333;
+    }
+
+    .formInput {
+        margin-top: 10px;
+        display: flex;
+        column-gap: 30px;
+
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            .input {
+                width: 100%;
+                max-width: 391px;
+                height: 46px;
+                padding-left: 21px;
+                border:none;
+                background: #f3f3f3;
+            }
+
+            .inputArea {
+                width: 391px;
+                height: 147px;
+                padding-left: 21px;
+                border:none;
+                background: #f3f3f3;
+                resize: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1500px) {
+    .form {
+
+        h1 {
+            text-align: center;
+        }
+
+        .formInput {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+
+            .inputs {
+                margin: auto;
+            }
+
+            img {
+                display: flex;
+                align-items:center;
+                margin: auto;
+            }
+        }
+
+        .agreeWithCompany {
+            text-align: center;
+            margin-left: 0;
+        }
+
+        .btnSend {
+            margin: 20px auto auto auto;
+        }
+    }
+}
+
+
+@media (max-width: 640px) {
+
+    .form {
+
+        .formInput {
+            .inputs {
+
+                .input, .inputArea {
+                    max-width: 321px;
+                }
+            }
+        }
+    }
+    
+}

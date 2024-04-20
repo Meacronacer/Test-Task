@@ -1,0 +1,81 @@
+@import './fonts';
+
+:root {
+  font-family: 'TTHoves', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0;
+  color: black;
+  overflow-x: hidden;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+
+  min-height: 100%;
+  line-height: 1.5;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 64px;
+  color: #bdbdbd;
+}
+
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box; 
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+}
+
+ul[role='list'], ol[role='list']{
+  list-style: none; 
+}
+
+html:focus-within{
+  scroll-behavior: smooth; 
+}
+
+a:not([class]){
+  text-decoration-skip-ink: auto; 
+}
+
+img, picture, svg, video, canvas{
+  max-width: 100%;
+  height: auto; 
+  vertical-align: middle; 
+  font-style: italic; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+input, button, textarea, select{
+  font: inherit; 
+}
+
+@media (prefers-reduced-motion: reduce){
+  html:focus-within {
+      scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition: none;
+  }
+}
